@@ -1,6 +1,7 @@
 html{
     /*font-size: 12px;*/
     background-color: #FAFAFA;
+    overflow-x: hidden;
 }
 
 .maxWidth{
@@ -518,6 +519,20 @@ hr {
   color: #fff;
 }
 /*                                          /Schedule                                                    */
+/*                                          Footer                                                    */
+.footer-style{
+  display: flex;
+  align-items: center;
+  min-height: 200px;
+  background-color: #fff;
+}
+.footer-items-links li:nth-child(2n+1){
+  margin-left: 1rem;
+}
+.footer-items-links li:nth-child(2n){
+  margin-left: 1rem;
+}
+/*                                         /Footer                                                    */
 /* ------------------------------------------------------------------------------------------------------
   /Body
  -------------------------------------------------------------------------------------------------------- */
