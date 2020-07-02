@@ -340,6 +340,52 @@ div.col-lg h1 + h2{
   height: 281px;
 }
 /*                                            /Course Experience                                                    */
+/*                                            Sessions                                                    */
+.gradient-sessions-text-back{
+  font-size: 100px;
+  font-weight: 700;
+  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(172, 172, 172));
+      background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 35%;
+  top: 20%;
+  opacity: 0.5; 
+}
+.sessions-text{
+  position: absolute;
+  left: 45%;
+  top: 85%;
+  z-index: 1000;
+}
+.card{
+  border-color: transparent;
+}
+.card-header{
+  border:  solid 4px #000000;
+  border-top: transparent;
+  border-right: transparent;
+  border-bottom: transparent;
+}
+.card-header strong:first-child{
+  font-size: 26px;
+}
+.card-text{
+  line-height: 40px;
+}
+.profile-img{
+  margin-left: 2.25rem;
+  width: 87px;
+  height: 87px;
+}
+.session-card-header-items div:nth-child(2n+1) {
+  margin-right: 8rem;
+}
+.session-card-header-items div:nth-child(2n) {
+  margin-right: 8rem;
+}
+/*                                           /Sessions                                                    */
 /* ------------------------------------------------------------------------------------------------------
   /Body
  -------------------------------------------------------------------------------------------------------- */
@@ -362,6 +408,9 @@ div.col-lg h1 + h2{
   }
   .exp-course-size{
     height: 793px;
+  }
+  .sessions-size{
+    height: 3150px;
   }
   /*                                             Course Experience                                                    */
   .list-group-item{
@@ -389,6 +438,12 @@ div.col-lg h1 + h2{
   }
   .exp-text {
     left: 35%!important;
+  }
+  .gradient-sessions-text-back{
+    left: 20%!important;
+  }
+  .sessions-text{
+    left: 40%!important;
   }
   /* Position the "next button" to the right */
    .prev{
@@ -479,9 +534,29 @@ div.col-lg h1 + h2{
       left: 20%;
       top: 290%;
     }
-
     #course-experience .col-lg + .col-lg{
       margin-top: 10rem;
+    }
+    .gradient-sessions-text-back{
+      left: -5%;
+      top: 200%;
+    }
+    .sessions-text{
+      left: 35%;
+      top: 450%;
+    }
+    .card-header-mobile{
+      flex-direction: column;
+    }
+    .session-card-header-items div:nth-child(2n+1) {
+      margin-right: 0;
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+    }
+    .session-card-header-items div:nth-child(2n) {
+      margin-right: 0;
+      padding-top: .5rem;
+      padding-bottom: .5rem;
     }
 /* ------------------------------------------------------------------------------------------------------
    Slider
