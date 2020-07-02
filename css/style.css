@@ -433,6 +433,8 @@ div.col-lg h1 + h2{
 .faq-main{
   background-color: transparent;
 }
+/*                                           /FAQ                                                    */
+/*                                           Course Fee                                                    */
 .gradient-fee-text-back{
   font-size: 100px;
   font-weight: 700;
@@ -451,7 +453,71 @@ div.col-lg h1 + h2{
   top: 85%;
   z-index: 1000;
 }
-/*                                           /FAQ                                                    */
+/*                                          /Course Fee                                                    */
+/*                                           Schedule                                                    */
+.schedule-main{
+  background-color: transparent;
+}
+.schedule-main .col-lg:nth-child(2) *:first-child{
+  margin-right: 1rem;
+}
+.schedule-main .col-lg:nth-child(2) *:last-child{
+  margin-left: 1rem;
+}
+.gradient-schedule-text-back{
+  font-size: 100px;
+  font-weight: 700;
+  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(172, 172, 172));
+      background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 35%;
+  top: 20%;
+  opacity: 0.5; 
+}
+.schedule-text{
+  position: absolute;
+  left: 45%;
+  top: 85%;
+  z-index: 1000;
+}
+.schedule-line-2{
+  display: flex;
+  flex-direction: row;
+}
+.schedule-line-2 div:first-child{
+  margin-left: 2.5rem;
+}
+.schedule-line-2 div:nth-child(2){
+  margin-left: 2.5rem;
+}
+.schedule-line-3{
+  align-items: center;
+}
+hr {
+  border:none;
+  border-top: 5px dotted #929292;
+  color:#fff;
+  background-color:#fff;
+  height:1px;
+  width: 60%;
+  margin: 0!important;
+}
+
+.btn-schedule-color{
+  background-color: #F46632;
+  color: #fff;
+  border-radius: 16px;
+  width: 266px;
+  height: 62px;
+}
+.btn-schedule-color:hover{
+  background-color: #b64b24;
+  border-color: #b64b248c;
+  color: #fff;
+}
+/*                                          /Schedule                                                    */
 /* ------------------------------------------------------------------------------------------------------
   /Body
  -------------------------------------------------------------------------------------------------------- */
@@ -483,6 +549,13 @@ div.col-lg h1 + h2{
     padding-left: 6em;
     padding-right: 6em;
 }
+  .project-grid{
+    display: flex;
+  }
+  .square-dates{
+    border-radius: 26px; background-color: #fff;width: 682px;
+            height: 160px;
+  }
 /*                                            /Course Experience                                                    */
  }
  @media  screen and (max-width: 1366px) {
@@ -543,6 +616,12 @@ div.col-lg h1 + h2{
   .next {
     right: -6%!important;
     border-radius: 3px 0 0 3px;
+  }
+  .gradient-schedule-text-back{
+    left: 23%!important;
+  }
+  .schedule-text{
+    left: 43%!important;
   }
  }
 
@@ -674,7 +753,25 @@ div.col-lg h1 + h2{
     .fee-text{
       left: 33%;
       top: 5%;
-    }    
+    }
+    .square-dates h1{
+      font-size: 18px;
+    }
+    .schedule-line-3 h4{
+      font-size: 1rem;
+    }
+    .btn-schedule-color{
+      width: 100px;
+      height: 50px;
+    }
+    .gradient-schedule-text-back{
+      left: 0%;
+      top: 200%;
+    }
+    .schedule-text{
+      left: 33%;
+      top: 450%;
+    }
 /* ------------------------------------------------------------------------------------------------------
    Slider
  -------------------------------------------------------------------------------------------------------- */
