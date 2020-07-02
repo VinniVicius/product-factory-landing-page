@@ -266,8 +266,12 @@ div.col-lg h1 + h2{
 /* ------------------------------------------------------------------------------------------------------
    Body
  -------------------------------------------------------------------------------------------------------- */
- .about-us{
+ /*                                             About Us                                                    */
+ .section-grid{
    background-color: #fff;
+ }
+ .section-grid + .section-grid{
+   margin-top: 5rem;
  }
  .about-us-social-links{
   margin-left: 3rem;
@@ -299,17 +303,72 @@ div.col-lg h1 + h2{
   height: 336px;
   width: 597px;
 }
+/*                                            /About Us                                                    */
+/*                                             Course Experience                                                    */
+.gradient-exp-text-back{
+  font-size: 100px;
+  font-weight: 700;
+  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(172, 172, 172));
+      background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  opacity: 0.5; 
+}
+.exp-text{
+  position: absolute;
+  left: 40%;
+  top: 85%;
+  z-index: 1000;
+}
+.exp-course li.list-group-item:first-child{
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+.list-group-item{
+  padding-left: 6em;
+  padding-right: 6em;
+}
+.exp-course li.list-group-item:last-child{
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+.img-exp-course{
+  width: 326px;
+  height: 281px;
+}
+/*                                            /Course Experience                                                    */
 /* ------------------------------------------------------------------------------------------------------
   /Body
  -------------------------------------------------------------------------------------------------------- */
 
 /* Desktops and up */
 @media (min-width: 992px) { 
-  .about-us{
+  #course-experience .col-lg:first-child{
+    top: 5%;
+  }
+  #course-experience .col-lg:nth-child(2){
+    top: 17%;
+  }
+  .section-grid{
     flex-direction: column;
-    margin-top: 23rem; height: 548px; box-shadow: 50px 50px 99px #4141410F;
+    margin-top: 10rem; box-shadow: 50px 50px 99px #4141410F;
         border-radius: 30px;
   }
+  .about-us-size{
+    height: 548px; 
+  }
+  .exp-course-size{
+    height: 793px;
+  }
+  /*                                             Course Experience                                                    */
+  .list-group-item{
+    padding-left: 6em;
+    padding-right: 6em;
+}
+/*                                            /Course Experience                                                    */
  }
  @media  screen and (max-width: 1366px) {
   .container{
@@ -324,6 +383,12 @@ div.col-lg h1 + h2{
   } 
   .gradient-about-text-back {
     left: 24%!important;
+  }
+  .gradient-exp-text-back {
+    left: 15%!important;
+  }
+  .exp-text {
+    left: 35%!important;
   }
   /* Position the "next button" to the right */
    .prev{
@@ -402,8 +467,22 @@ div.col-lg h1 + h2{
       height: 156px;
       width: 257px;
     }
-    
+    .exp-course-grid{
+      flex-direction: column;
+    }
 
+    .gradient-exp-text-back{
+      left: 0;
+      top: 40%;
+    }
+    .exp-text{
+      left: 20%;
+      top: 290%;
+    }
+
+    #course-experience .col-lg + .col-lg{
+      margin-top: 10rem;
+    }
 /* ------------------------------------------------------------------------------------------------------
    Slider
  -------------------------------------------------------------------------------------------------------- */
