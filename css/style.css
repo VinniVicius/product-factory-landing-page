@@ -161,6 +161,7 @@ div.col-lg h1 + h2{
  -------------------------------------------------------------------------------------------------------- */
 
  .mySlides {display: none}
+ .mySlides2 {display: none}
  img {vertical-align: middle;}
  
  /* Slideshow container */
@@ -359,10 +360,10 @@ div.col-lg h1 + h2{
   top: 85%;
   z-index: 1000;
 }
-.card{
+.card.sessions{
   border-color: transparent;
 }
-.card-header{
+.card-header.sessions{
   border:  solid 4px #000000;
   border-top: transparent;
   border-right: transparent;
@@ -410,6 +411,47 @@ div.col-lg h1 + h2{
   height: 200px;
 }
 /*                                           /Masters                                                    */
+/*                                           FAQ                                                    */
+.gradient-faq-text-back{
+  font-size: 100px;
+  font-weight: 700;
+  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(172, 172, 172));
+      background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 40%;
+  top: 100%;
+  opacity: 0.5; 
+}
+.faq-text{
+  position: absolute;
+  left: 35%;
+  top: 160%;
+  z-index: 1000;
+}
+.faq-main{
+  background-color: transparent;
+}
+.gradient-fee-text-back{
+  font-size: 100px;
+  font-weight: 700;
+  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(172, 172, 172));
+      background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  opacity: 0.5; 
+}
+.fee-text{
+  position: absolute;
+  left: 43%;
+  top: 85%;
+  z-index: 1000;
+}
+/*                                           /FAQ                                                    */
 /* ------------------------------------------------------------------------------------------------------
   /Body
  -------------------------------------------------------------------------------------------------------- */
@@ -479,6 +521,20 @@ div.col-lg h1 + h2{
     width: 120px;
     height: 120px;
   }
+  .gradient-faq-text-back{
+    left: 40%!important;
+  }
+  .faq-text{
+    top: 300%!important;
+    left: 30%!important;
+  }
+  .gradient-fee-text-back{
+    left: 20%!important;
+    top: -220%!important;
+  }
+  .fee-text{
+    left: 43%!important;
+  }  
   /* Position the "next button" to the right */
    .prev{
     transform: matrix(-1, 0, 0, -1, 0, 0);
@@ -602,6 +658,23 @@ div.col-lg h1 + h2{
     .card.center-pics{
       align-items: center;
     }
+    .gradient-faq-text-back{
+      left: 25%;
+    }
+    .faq-text{
+      top: 250%;
+      left: 5%;
+      text-align: center;
+    }
+    .gradient-fee-text-back{
+      left: 5%;
+      top: -320%;
+      text-align: center;
+    }
+    .fee-text{
+      left: 33%;
+      top: 5%;
+    }    
 /* ------------------------------------------------------------------------------------------------------
    Slider
  -------------------------------------------------------------------------------------------------------- */
