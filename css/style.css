@@ -386,6 +386,30 @@ div.col-lg h1 + h2{
   margin-right: 8rem;
 }
 /*                                           /Sessions                                                    */
+/*                                           Masters                                                    */
+.gradient-masters-text-back{
+  font-size: 100px;
+  font-weight: 700;
+  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(172, 172, 172));
+      background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 35%;
+  top: 100%;
+  opacity: 0.5; 
+}
+.masters-text{
+  position: absolute;
+  left: 43%;
+  top: 160%;
+  z-index: 1000;
+}
+.profile-img-card__grid{
+  width: 200px;
+  height: 200px;
+}
+/*                                           /Masters                                                    */
 /* ------------------------------------------------------------------------------------------------------
   /Body
  -------------------------------------------------------------------------------------------------------- */
@@ -444,6 +468,16 @@ div.col-lg h1 + h2{
   }
   .sessions-text{
     left: 40%!important;
+  }
+  .gradient-masters-text-back{
+    left: 30%!important;
+  }
+  .masters-text{
+    left: 45%!important;
+  }
+  .profile-img-card__grid{
+    width: 120px;
+    height: 120px;
   }
   /* Position the "next button" to the right */
    .prev{
@@ -557,6 +591,16 @@ div.col-lg h1 + h2{
       margin-right: 0;
       padding-top: .5rem;
       padding-bottom: .5rem;
+    }
+    .gradient-masters-text-back{
+      left: 5%;
+      top: -80%;
+    }
+    .masters-text{
+      left: 35%;
+    }
+    .card.center-pics{
+      align-items: center;
     }
 /* ------------------------------------------------------------------------------------------------------
    Slider
